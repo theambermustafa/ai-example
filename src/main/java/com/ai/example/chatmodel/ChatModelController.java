@@ -18,6 +18,7 @@ import java.util.Map;
 public class ChatModelController {
 
     private static final String DEFAULT_MESSAGE = "Tell me a joke";
+
     private final OllamaChatModel chatModel;
 
     @Autowired
