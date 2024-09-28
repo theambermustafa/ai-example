@@ -1,4 +1,4 @@
-package com.ai.example.controller;
+package com.ai.example.chatmodel;
 
 import org.springframework.ai.chat.messages.UserMessage;
 import org.springframework.ai.chat.model.ChatResponse;
@@ -14,14 +14,14 @@ import reactor.core.publisher.Flux;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/chat")
-public class ChatController {
+@RequestMapping("/cmc")
+public class ChatModelController {
 
     private static final String DEFAULT_MESSAGE = "Tell me a joke";
     private final OllamaChatModel chatModel;
 
     @Autowired
-    public ChatController(OllamaChatModel chatModel) {
+    public ChatModelController(OllamaChatModel chatModel) {
         this.chatModel = chatModel;
     }
 
